@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+
+app:
+  jwt:
+    secret: iBZ4qjYZsuyGgMAfvijo+Pqo02rPT3oH5pC/3WhwZ8LahYZlo5EZLFi8hyeP6nNY
+    expiration-ms: 3600000
+  cors:
+    allowed-origins: http://localhost:4200
